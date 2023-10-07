@@ -4,7 +4,9 @@
   "description": "A sample project for exploring SCSS features.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass-dev": "npx sass scss/main.scss dist/main.css --watch",
+    "sass-prod": "npx sass scss/main.scss dist/main.css --style compressed",
+    "sass": "npx sass scss/main.scss dist/main.css"
   },
   "keywords": [
     "SCSS",

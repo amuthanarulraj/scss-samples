@@ -1,0 +1,6 @@
+@use 'sass:color'; // @use is a SCSS @rule which import SCSS modules. Here, sass:color is a built-in module that being imported.
+
+$primary-color: rgba(32, 117, 181, 1);
+$secondary-color: rgba(43, 195, 114, 1);
+$tertiary-color: rgba(236, 164, 47, 1);
+$primary-background-color: color.change($primary-color, $alpha: 0.1); // color.change() is a built-in function that is used to change the alpha value of a color.
