@@ -1,0 +1,14 @@
+$spaces: 5, 10, 15, 20; // This is a list data type
+/*
+    @each is a control directive that iterates over a list. This loop auto generates spacing classes.
+*/
+@each $space in $spaces {
+    // Interpolation (#{} syntax) is used to insert the value of a variable into a string.
+    .margin-#{$space} {
+        margin: #{$space}px;
+    }
+    .padding-#{$space} {
+        padding: #{$space}px;
+    }
+}
+

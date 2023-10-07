@@ -1,0 +1,9 @@
+/* 
+    The mixin provides reusable styles with optional parameters and default values. 
+    The default values will be used when the parameters are not provided.
+    https://sass-lang.com/documentation/at-rules/mixin/
+*/
+@mixin border($width: 1px, $style: solid, $color: $primary-color, $radius: 5px) {
+  border: $width $style $color;
+  border-radius: $radius;
+}

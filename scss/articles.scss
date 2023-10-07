@@ -1,4 +1,16 @@
 .blog-item {
-    color: $primary-color;
+    // @extend inherits the styles from another class
+    @extend .margin-5;
+    @extend .padding-10;
+
+    // @include includes the styles from a mixin
+    @include border($width: 1px, $radius: 10px);
+    
     background-color: $primary-background-color;
+
+    // SCSS supports nested selectors and all combinators are supported.
+    h3 {
+        color: $primary-color;
+    }
+
 }

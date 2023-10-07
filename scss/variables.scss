@@ -1,4 +1,8 @@
-@use 'sass:color'; // @use is a SCSS @rule which import SCSS modules. Here, sass:color is a built-in module that being imported.
+/* 
+    @use is a SCSS @rule which import SCSS modules. Here, sass:color is a built-in module that being imported. 
+    https://sass-lang.com/documentation/modules/color/
+*/
+@use 'sass:color';
 
 $primary-color: rgba(32, 117, 181, 1);
 $secondary-color: rgba(43, 195, 114, 1);
