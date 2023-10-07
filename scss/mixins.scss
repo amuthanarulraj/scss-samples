@@ -5,5 +5,14 @@
 */
 @mixin border($width: 1px, $style: solid, $color: $primary-color, $radius: 5px) {
   border: $width $style $color;
-  border-radius: $radius;
+  /*
+    @if is a control directive that allows conditional execution based on the value of a variable.
+    If the radius is more than 10px the border-radius will be 10px.
+    https://sass-lang.com/documentation/at-rules/control/if/
+    */
+  @if $radius > 10px {
+    border-radius: 10px;
+  } @else {
+    border-radius: $radius;
+  }
 }

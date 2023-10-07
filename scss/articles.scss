@@ -4,8 +4,8 @@
     @extend .padding-10;
 
     // @include includes the styles from a mixin
-    @include border($width: 1px, $radius: 10px);
-    
+    @include border($width: 1px, $radius: 12px);
+
     background-color: $primary-background-color;
 
     // SCSS supports nested selectors and all combinators are supported.
